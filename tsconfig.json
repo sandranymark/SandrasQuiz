@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES6",               // JavaScript-version att kompilera till
+        "module": "commonjs",          // Vanligt modulsystem för Node.js och många projekt
+        "outDir": "./dist",            // Var de kompilerade filerna ska placeras
+        "strict": true,                // Aktiverar strikt typkontroll för bättre typer
+        "esModuleInterop": true,       // Gör det enklare att importera CommonJS-moduler
+        "forceConsistentCasingInFileNames": true, // Tvingar konsekvent användning av filnamn
+        "skipLibCheck": true,          // Hoppar över typkontroll av deklarationsfiler
+        "noImplicitAny": true,         // Förbjuder användning av 'any' utan explicit typ
+        "noUnusedLocals": true,        // Flaggar oanvända lokala variabler
+        "noUnusedParameters": true,    // Flaggar oanvända parametrar
+        "noImplicitReturns": true,     // Flaggar funktioner som inte returnerar något värde
+        "noFallthroughCasesInSwitch": true, // Förhindrar fallthrough i switch-satser
+        "strictNullChecks": true,      // Ensures null and undefined are handled explicitly
+        // Explicit hantering: Med strictNullChecks måste utvecklaren specificera om en variabel 
+        //får vara null och hantera det om så är fallet, exempelvis genom en if-kontroll.
+        "strictFunctionTypes": true,   // Säkerställer att funktionstyper kontrolleras strikt
+    },
+    "include": ["./src"],         // Inkluderar alla TypeScript-filer i src-mappen och dess undermappar
+    "exclude": ["node_modules", "dist"] // Exkluderar node_modules och dist-mappen
+}
+
+/* Visit https://aka.ms/tsconfig to read more about this file */
