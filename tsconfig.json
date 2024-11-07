@@ -21,4 +21,26 @@
     "exclude": ["node_modules", "dist"] // Exkluderar node_modules och dist-mappen
 }
 
+// Egenskapen `"exclude"` specificerar en array av fil- eller katalogmönster som ska uteslutas från kompilationsprocessen. 
+// I detta fall är katalogerna `node_modules` och `dist` exkluderade.
+
+// Att exkludera katalogen `node_modules` är en vanlig praxis eftersom den innehåller tredjepartsbibliotek och beroenden 
+// som inte är skapade av projektutvecklarna. 
+
+// Dessa filer är redan kompilerade och behöver inte bearbetas av TypeScript-kompilatorn, 
+// vilket hjälper till att snabba upp kompilationsprocessen och undvika potentiella konflikter eller fel.
+
+// På samma sätt används katalogen `dist` vanligtvis för att lagra ut data från byggprocessen, 
+// såsom kompilerade JavaScript-filer. Genom att exkludera denna katalog, 
+// undviker TypeScript-kompilatorn att bearbeta de genererade filerna igen, 
+// vilket förhindrar onödig omkompilering och potentiella problem med cirkulära beroenden.
+
+// Sammantaget hjälper egenskapen `"exclude"` till att optimera TypeScript-kompilationsprocess
+// genom att fokusera endast på de källfiler som behöver kompileras, vilket förbättrar byggprestandan 
+// och minskar risken för fel.
+
+
+
+
+
 /* Visit https://aka.ms/tsconfig to read more about this file */
